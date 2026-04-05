@@ -1,0 +1,62 @@
+# =========================
+# Node & Dependências
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.swp
+
+# =========================
+# Expo & Metro Bundler
+# =========================
+.expo/
+dist/
+web-build/
+.metro-health-check*
+
+# =========================
+# iOS (Bare Workflow / Prebuild)
+# =========================
+ios/Pods/
+ios/build/
+ios/Index/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+*.mobileprovision
+*.cer
+
+# =========================
+# Android (Bare Workflow / Prebuild)
+# =========================
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/*.keystore
+!android/app/debug.keystore
+
+# =========================
+# Variáveis de Ambiente
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# (É boa prática manter um .env.example no repositório, por isso não ignoramos ele)
+
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# =========================
+# IDEs e Editores
+# =========================
+.idea/
+*.swp
+*.swo
