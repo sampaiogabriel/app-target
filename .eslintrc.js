@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['react', 'react-native', 'prettier', 'simple-import-sort'],
   rules: {
     'prettier/prettier': 'error',
+    "react-native/no-color-literals": "off",
     
     // Organização automática de imports e exports
     'simple-import-sort/imports': 'error',
