@@ -7,13 +7,16 @@
       "package": "com.codesampa.target",
       "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
-          "foregroundImage": "./assets/adaptive-icon.png",
-          "backgroundColor": "#3D44CD"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3D44CD"
       }
     },
     "ios": {
       "bundleIdentifier": "com.codesampa.target",
       "icon": "./assets/ios-icon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
