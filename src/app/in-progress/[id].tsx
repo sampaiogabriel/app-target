@@ -12,7 +12,7 @@ const details = {
 
 export default function InProgress() {
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, padding: 24 }}>
       <PageHeader
         title="Apple Watch"
         rightButton={{ icon: 'edit', onPress: () => '' }}

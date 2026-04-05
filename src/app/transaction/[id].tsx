@@ -5,7 +5,7 @@ export default function Transaction() {
   const { id } = useLocalSearchParams<{ id: string }>();
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, padding: 24 }}>
       <Text>ID: {id}</Text>
       <Button title="Voltar" onPress={() => router.back()} />
     </View>
