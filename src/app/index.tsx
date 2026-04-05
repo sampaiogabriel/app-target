@@ -1,4 +1,5 @@
-import { View } from 'react-native';
+import { router } from 'expo-router';
+import { StatusBar, View } from 'react-native';
 
 import { Button } from '@/components/Button';
 import { HomeHeader } from '@/components/HomeHeader';
@@ -31,6 +32,7 @@ const targets = [
 export default function Index() {
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar barStyle="light-content" />
       <HomeHeader data={summary} />
 
       <List
@@ -43,7 +45,7 @@ export default function Index() {
       />
 
       <View style={{ padding: 24, paddingBottom: 32 }}>
-        <Button title="Nova Meta" />
+        <Button title="Nova Meta" onPress={() => router.navigate('/target')} />
       </View>
     </View>
   );
