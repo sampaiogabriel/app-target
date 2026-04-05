@@ -14,14 +14,14 @@ const summary = {
 
 const targets = [
   {
-    id: '1',
+    id: '123',
     name: 'Comprar uma cadeira',
     percentage: '75%',
     current: '900,00',
     target: '1.200,00',
   },
   {
-    id: '2',
+    id: '242',
     name: 'Comprar um apple watch',
     percentage: '45%',
     current: '900,00',
@@ -39,7 +39,12 @@ export default function Index() {
         title="Metas"
         data={targets}
         keyExtractor={item => item.id}
-        renderItem={({ item }) => <Target data={item} />}
+        renderItem={({ item }) => (
+          <Target
+            data={item}
+            onPress={() => router.navigate(`/in-progress/${item.id}`)}
+          />
+        )}
         emptyMessage="Nenhuma meta. Toque em uma nova meta para criar."
         containerStyle={{ paddingHorizontal: 24 }}
       />

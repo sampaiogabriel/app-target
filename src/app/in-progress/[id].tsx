@@ -1,11 +1,24 @@
-import { router } from 'expo-router';
-import { Button, Text, View } from 'react-native';
+import { useLocalSearchParams } from 'expo-router';
+import { View } from 'react-native';
+
+import { PageHeader } from '@/components/PageHeader';
+import { Progress } from '@/components/Progress';
+
+const details = {
+  current: 'R$ 580,00',
+  target: 'R$ 1000,00',
+  percentage: 24,
+};
 
 export default function InProgress() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>In Progress</Text>
-      <Button title="Voltar" onPress={() => router.back()} />
+    <View style={{ flex: 1 }}>
+      <PageHeader
+        title="Apple Watch"
+        rightButton={{ icon: 'edit', onPress: () => '' }}
+      />
+
+      <Progress data={details} />
     </View>
   );
 }

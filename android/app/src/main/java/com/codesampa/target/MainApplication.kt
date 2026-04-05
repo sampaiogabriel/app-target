@@ -1,4 +1,4 @@
-package com.codesampa.target
+package com.codesampa.Target
 
 import android.app.Application
 import android.content.res.Configuration

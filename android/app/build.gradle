@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.codesampa.target'
+    namespace 'com.codesampa.Target'
     defaultConfig {
-        applicationId 'com.codesampa.target'
+        applicationId 'com.codesampa.Target'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
