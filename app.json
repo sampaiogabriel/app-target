@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "target",
-    "slug": "target",
-    "schema": "target",
+    "name": "Target",
+    "slug": "Target",
+    "schema": "Target",
     "version": "1.0.0",
     "android": {
-      "package": "com.codesampa.target",
+      "package": "com.codesampa.Target",
       "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -13,7 +13,7 @@
       }
     },
     "ios": {
-      "bundleIdentifier": "com.codesampa.target",
+      "bundleIdentifier": "com.codesampa.Target",
       "icon": "./assets/ios-icon.png"
     },
     "plugins": [
