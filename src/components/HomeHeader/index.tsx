@@ -4,6 +4,7 @@ import { Text, View } from 'react-native';
 import { colors } from '@/theme/colors';
 
 import { Separator } from '../Separator';
+import { Summary } from '../Summary';
 import { styles } from './styles';
 
 export type HomeHeaderProps = {
@@ -26,6 +27,19 @@ export function HomeHeader({ data }: Props) {
       </View>
 
       <Separator color={colors.blue[400]} />
+
+      <View style={styles.summary}>
+        <Summary
+          data={{ label: 'Entradas', value: 'R$ 120,00' }}
+          icon={{ name: 'arrow-upward', color: colors.green[500] }}
+        />
+
+        <Summary
+          data={{ label: 'Saídas', value: 'R$ 100,00' }}
+          icon={{ name: 'arrow-downward', color: colors.red[400] }}
+          isLeft
+        />
+      </View>
     </LinearGradient>
   );
 }
