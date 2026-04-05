@@ -10,17 +10,17 @@ export type SummaryProps = {
 
 export type Props = {
   data: SummaryProps;
-  isLeft?: boolean;
+  isRight?: boolean;
   icon: {
     name: keyof typeof MaterialIcons.glyphMap;
     color: ColorValue;
   };
 };
 
-export function Summary({ data, icon, isLeft = false }: Props) {
+export function Summary({ data, icon, isRight = false }: Props) {
   return (
     <View style={styles.container}>
-      <View style={[styles.header, isLeft && { justifyContent: 'flex-end' }]}>
+      <View style={[styles.header, isRight && { justifyContent: 'flex-end' }]}>
         <MaterialIcons name={icon.name} size={16} color={icon.color} />
         <Text style={styles.label}>{data.label}</Text>
       </View>

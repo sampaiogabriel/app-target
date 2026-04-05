@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   header: { flexDirection: 'row', alignItems: 'center', gap: 5 },
   label: {
-    fontSize: 10,
+    fontSize: 12,
     color: colors.blue[300],
     fontFamily: fontFamily.regular,
   },
