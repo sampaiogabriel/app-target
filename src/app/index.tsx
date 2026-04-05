@@ -1,5 +1,6 @@
 import { View } from 'react-native';
 
+import { Button } from '@/components/Button';
 import { HomeHeader } from '@/components/HomeHeader';
 import { List } from '@/components/List';
 import { Target } from '@/components/Target';
@@ -40,6 +41,10 @@ export default function Index() {
         emptyMessage="Nenhuma meta. Toque em uma nova meta para criar."
         containerStyle={{ paddingHorizontal: 24 }}
       />
+
+      <View style={{ padding: 24, paddingBottom: 32 }}>
+        <Button title="Nova Meta" />
+      </View>
     </View>
   );
 }
